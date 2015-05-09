@@ -1,0 +1,15 @@
+// Database: viewsfromdatabase
+// Collection: views
+[
+    
+    {
+        "Name": "Home.Index",
+        "Path": "/Views/Home/Index.cshtml",
+        "Content": "@model PocRazorFromDatabase.Models.Person \r\n\r\n<p>Hello, @Model.Name</p>\r\n\r\n<p>Now is @DateTime.Now.ToLongDateString()</p>\r\n\r\n@Html.Partial(\"_TestPartial\")"
+    },
+    {
+        "Name": "Child View",
+        "Path": "/Views/Home/_TestPartial.cshtml",
+        "Content": "<h1>This is html partial!<h1>"
+    }
+]
